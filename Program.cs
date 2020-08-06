@@ -45,7 +45,7 @@ namespace PreMadeAutoBackUP
             if (Looooop == 10)
             {
                 string startPath = @"C:\Users\admin\Desktop\LegacyDB";
-                string zipPath = @"C:\Users\admin\Desktop\HourlyBackup\DB " + DateTime.Now.ToString("d-M htt:mm:ss") + ".zip";
+                string zipPath = @"C:\Users\admin\Desktop\HourlyBackup\DB " + DateTime.Now.ToString("d-M htt") + ".zip"; // :mm:ss <-- removed. Can't use : in file name
                 ZipFile.CreateFromDirectory(startPath, zipPath);
             }
             else if (Looooop == 0)
